@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run Drop – Déstockage running & trail</title>
+<meta name="description" content="Run Drop : déstockage d'articles running et trail neufs, issus des invendus de magasins et de marques. Ouverture en janvier 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f5f1; --ink:#141414; --muted:#5d5d58; --accent:#c8e025; --line:#dcdad3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+    display:flex; flex-direction:column; min-height:100vh;
+  }
+  header,main,footer{width:100%; max-width:960px; margin:0 auto; padding:0 24px}
+  header{padding-top:28px; display:flex; justify-content:space-between; align-items:center}
+  .logo{font-weight:800; font-size:22px; letter-spacing:-0.02em}
+  .logo span{background:var(--accent); padding:0 6px; margin-left:2px}
+  .tag{font-size:13px; color:var(--muted); border:1px solid var(--line); border-radius:99px; padding:6px 12px}
+  main{flex:1; display:flex; flex-direction:column; justify-content:center; padding-top:64px; padding-bottom:64px}
+  h1{font-weight:800; font-size:clamp(40px,8vw,84px); line-height:0.98; letter-spacing:-0.035em; max-width:12ch}
+  h1 em{font-style:normal; background:linear-gradient(transparent 62%, var(--accent) 62%)}
+  .lead{margin-top:28px; font-size:clamp(17px,2.2vw,20px); line-height:1.55; color:var(--muted); max-width:46ch}
+  .points{margin-top:40px; display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--line)}
+  .points div{padding:20px 20px 20px 0; border-bottom:1px solid var(--line)}
+  .points b{display:block; font-size:15px; margin-bottom:6px}
+  .points p{font-size:14px; color:var(--muted); line-height:1.5}
+  .cta{margin-top:44px; display:flex; flex-wrap:wrap; gap:12px}
+  .btn{display:inline-block; text-decoration:none; font-weight:600; font-size:15px; padding:14px 22px; border-radius:6px}
+  .btn-dark{background:var(--ink); color:var(--bg)}
+  .btn-line{border:1.5px solid var(--ink); color:var(--ink)}
+  .btn:hover{opacity:.85}
+  footer{padding-bottom:28px; font-size:13px; color:var(--muted); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px}
+  footer a{color:inherit}
+  @media (max-width:640px){
+    .points{grid-template-columns:1fr}
+    .points div{padding-right:0}
+    header{padding-top:20px}
+    main{padding-top:40px}
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Run<span>Drop</span></div>
+    <div class="tag">Ouverture janvier 2027</div>
+  </header>
+
+  <main>
+    <h1>Le running & le trail, <em>en déstockage</em>.</h1>
+    <p class="lead">Run Drop donne une seconde chance aux articles neufs invendus des magasins et des marques de running et de trail : sacs, flasques, ceintures, accessoires. Des produits authentiques, à prix réduit.</p>
+
+    <div class="points">
+      <div><b>Neuf et authentique</b><p>Uniquement des articles neufs, issus directement des magasins et des marques.</p></div>
+      <div><b>Fins de série</b><p>Anciens coloris, fins de collection, surplus de stock : le même matériel, moins cher.</p></div>
+      <div><b>Vous êtes un magasin ?</b><p>Nous écoulons vos invendus en dépôt-vente, sans casser vos prix en boutique.</p></div>
+    </div>
+
+    <div class="cta">
+      <a class="btn btn-dark" href="mailto:contact@rundrop.fr">contact@rundrop.fr</a>
+      <a class="btn btn-line" href="https://www.instagram.com/rundrop.shop/" target="_blank" rel="noopener">Instagram @rundrop.shop</a>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Run Drop</span>
+    <span>Contact : <a href="mailto:contact@rundrop.fr">contact@rundrop.fr</a></span>
+  </footer>
+</body>
+</html>
